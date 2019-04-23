@@ -14,7 +14,7 @@ It implements Repository Design Pattern.
  
 - goalza.booking.core is the BLL (Buisness Logic Layer) of the application.
 - goalza.booking.core consists of all the Domain classes and DTO's (Data Transfer Objects).
-- Igoalza.booking.core also defines Interfaces for the Repository Pattern .
+- goalza.booking.core also defines Interfaces for the Repository Pattern .
  
 - goalza.booking.infrastructure is the DAL (Data Access Layer) of the application.
 - goalza.booking.infrastructure consists of implementation for the interfaces.
