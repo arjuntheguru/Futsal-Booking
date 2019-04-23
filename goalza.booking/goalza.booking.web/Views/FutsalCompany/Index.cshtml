@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-md-10">
+        <h1 class="display-4">Futsal Company</h1>
+    </div>
+    <div class="col-md-2">
+        <input type="button" class="btn btn-dark mt-4" data-toggle="modal" data-target="#createFutsalCompany" id="addBtn" value="Add Futsal Company" />
+    </div>
+</div>
+<div style="height: 100%; box-sizing: border-box; padding-top:20px;">
+    <div id="futsalCompanyGrid" style="width: 100%; height:450px" class="ag-theme-balham"></div>
+</div>
+<div class="modal fade" id="createFutsalCompany" tabindex="-1" role="dialog" aria-labelledby="futsalCompanyTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <form id="futsalCompanyForm">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-light" id="futsalCompanyTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-light" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="id" />
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <label for="registrationNo">Registration Number <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="registrationNo" id="registrationNo" />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="name"> Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="name" id="name" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <label for="address">Address <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="address" name="address" />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="contactNo">Contact No <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="contactNo" name="contactNo" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <label for="openingTime">Opening Time <span class="text-danger">*</span></label>
+                            <input class="form-control" id="openingTime" type="time" name="openingTime" />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="closingTime">Closing Time <span class="text-danger">*</span></label>
+                            <input class="form-control" id="closingTime" type="time" name="closingTime" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <label for="email">Email<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email" />
+                        </div>                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{ 
+
+    <script src="~/js/futsalCompany.js"></script>
+}
+
+
+
+

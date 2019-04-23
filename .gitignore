@@ -1,0 +1,8 @@
+SRS_Goalza.docx
+/goalza.booking/goalza.booking.core/bin
+/goalza.booking/goalza.booking.core/obj
+/goalza.booking/goalza.booking.infrastructure/bin
+/goalza.booking/goalza.booking.infrastructure/obj
+/goalza.booking/goalza.booking.web/bin
+/goalza.booking/goalza.booking.web/obj
+/goalza.booking/goalza.booking.web/Data/Migrations
