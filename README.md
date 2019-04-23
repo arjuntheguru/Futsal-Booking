@@ -38,8 +38,11 @@ Steps to create the Database
 - Run the following commands
  
   Add-Migration (give the migration a name) -Context BookingContext -OutputDir Data/Migrations/Domain
+
   update-database -Context BookingContext
+
   Add-Migration (give the migration a name) -Context ApplicationDbContext -OutputDir Data/Migrations
+
   update-database -Context ApplicationDbContext 
  
 ** Contact ARJUN SUBEDI for further queries **
